@@ -25,7 +25,7 @@ function setup(){
 // Moving background
 path=createSprite(width/2,height/2);
 path.addImage(pathImg);
-path.velocityY = 4;
+path.velocityY = 8;
 
 gameOver=createSprite(width/2,height-20);
 gameOver.addImage(endImg);
@@ -108,8 +108,8 @@ function createCash() {
   var cash = createSprite(Math.round(random(50, 350),40, 10, 10));
   cash.addImage(cashImg);
   cash.scale=0.12;
-  cash.velocityY = 3;
-  cash.lifetime = 150;
+  cash.velocityY = 20;
+  cash.lifetime = 200;
   cashG.add(cash);
   cash.setCollider("circle",0,0,40);
   cash.debug = false;
@@ -122,8 +122,8 @@ function createDiamonds() {
   var diamonds = createSprite(Math.round(random(50, 350),40, 10, 10));
   diamonds.addImage(diamondsImg);
   diamonds.scale=0.03;
-  diamonds.velocityY = 3;
-  diamonds.lifetime = 150;
+  diamonds.velocityY = 20;
+  diamonds.lifetime = 300;
   diamondsG.add(diamonds);
   diamonds.setCollider("circle",0,0,40);
   diamonds.debug = false;
@@ -136,8 +136,8 @@ function createJwellery() {
   var jwellery = createSprite(Math.round(random(50, 350),40, 10, 10));
   jwellery.addImage(jwelleryImg);
   jwellery.scale=0.13;
-  jwellery.velocityY = 3;
-  jwellery.lifetime = 150;
+  jwellery.velocityY = 20;
+  jwellery.lifetime = 300;
   jwelleryG.add(jwellery);
   jwellery.setCollider("circle",0,0,40);
   jwellery.debug = false;
@@ -150,8 +150,8 @@ function createSword(){
   var sword = createSprite(Math.round(random(50, 350),40, 10, 10));
   sword.addImage(swordImg);
   sword.scale=0.1;
-  sword.velocityY = 3;
-  sword.lifetime = 150;
+  sword.velocityY = 20;
+  sword.lifetime = 300;
   swordGroup.add(sword);
   sword.setCollider("circle",0,0,40);
   sword.debug = false;
